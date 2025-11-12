@@ -6,7 +6,7 @@ let context: BrowserContext;
 let page: Page;
 
 Before(async () => {
-  browser = await chromium.launch({ headless: false });
+  browser = await chromium.launch({ headless: true });
   context = await browser.newContext();
   page = await context.newPage();
 });

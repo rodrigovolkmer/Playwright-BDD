@@ -2,6 +2,8 @@
 
 Lightweight Playwright + Cucumber (BDD) TypeScript test suite for Sauce Demo (example repo).
 
+Please note that for this project, the username and password used by the feature test files are being presented on the login page by Sauce Demo website so there's no need for security measures where the password should not be exposed.
+
 ## Contents
 
 - src/features/… (Cucumber .feature files)
@@ -36,6 +38,8 @@ You can run Cucumber directly (the repo uses ts-node to run TS step defs):
 ```bash
 # run cucumber with the default profile in [cucumber.js]
 npx cucumber-js
+# or
+npm test
 ```
 
 To run a single feature or scenario:
@@ -45,35 +49,8 @@ To run a single feature or scenario:
 npx cucumber-js [loginTest.feature]
 
 # run with tags (if you use tags)
-npx cucumber-js --tags "@valid-"
+npx cucumber-js --tags "@valid_login"
 ```
-
-## cucumber.js profile (recommended array form)
-
-cucumber-js expects CLI-like args in the profile. Example that works:
-
-```bash
-module.exports = {
-  default: [
-    "--format",
-    "json:reports/cucumber_report.json",
-    "--format-options",
-    '{"snippetInterface":"synchronous"}',
-    "--require-module",
-    "ts-node/register",
-    "--require",
-    "src/steps/*.ts",
-    "--require",
-    "src/features/*.feature",
-    "--world-parameters",
-    '{"sauceDemoUrl":"https://www.saucedemo.com/"}',
-    "--parallel",
-    "6",
-  ],
-};
-```
-
-Note: the object-style nested keys you tried (formatOptions / requireModule / worldParameters) is not parsed by cucumber-js; use the string or array form above.
 
 ## Reports
 
@@ -83,4 +60,29 @@ To generate the report, please run the following command
 
 ```bash
 npm run generate-report
+```
+
+## cucumber.js profile (recommended array form)
+
+cucumber-js expects CLI-like args in the profile. Example that works:
+
+```bash
+module.exports = {
+  default: `
+  --format json:reports/cucumber_report.json
+  --format-options '{"snippetInterface": "synchronous"}'
+  --require-module ts-node/register
+  --require src/steps/*.ts src/features/*.feature
+  --parallel 4`,
+};
+```
+
+## For Headed Mode
+
+The repo executes tests in headless mode, if headless mode is necessay, please change the settings below
+file: src/config/global-setup.ts
+
+```bash
+#line 9
+browser = await chromium.launch({ headless: false });
 ```

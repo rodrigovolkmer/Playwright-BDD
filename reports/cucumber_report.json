@@ -4,77 +4,6 @@
     "elements": [
       {
         "description": "",
-        "id": "login-page;invalid-login-attempt---username-field-empty",
-        "keyword": "Scenario",
-        "line": 11,
-        "name": "Invalid login attempt - username field empty",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 3842088591
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 12,
-            "name": "I am a user on the Sauce Demo login page",
-            "match": {
-              "location": "src/steps/loginSteps.ts:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1419425776
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 13,
-            "name": "I leave the username field empty and enter valid password \"secret_sauce\"",
-            "match": {
-              "location": "src/steps/loginSteps.ts:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 641743882
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "an error message \"Epic sadface: Username is required\" should be displayed",
-            "match": {
-              "location": "src/steps/loginSteps.ts:32"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 40148947
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 787157417
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@invalid_login",
-            "line": 10
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
         "id": "login-page;should-be-able-to-login-with-valid-credentials",
         "keyword": "Scenario",
         "line": 5,
@@ -85,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 3835621443
+              "duration": 1158646337
             }
           },
           {
@@ -98,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1520093075
+              "duration": 1146086895
             }
           },
           {
@@ -111,7 +40,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 805243542
+              "duration": 695879444
             }
           },
           {
@@ -124,7 +53,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 32474892
+              "duration": 40762047
             }
           },
           {
@@ -132,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 540934911
+              "duration": 87263133
             }
           }
         ],
@@ -156,7 +85,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 3875451461
+              "duration": 1159248544
             }
           },
           {
@@ -169,7 +98,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1335619800
+              "duration": 1149388515
             }
           },
           {
@@ -182,7 +111,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 607960343
+              "duration": 529185615
             }
           },
           {
@@ -195,7 +124,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 63778931
+              "duration": 24639780
             }
           },
           {
@@ -203,7 +132,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 834105857
+              "duration": 162472751
             }
           }
         ],
@@ -211,6 +140,77 @@
           {
             "name": "@invalid_login",
             "line": 16
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-page;invalid-login-attempt---username-field-empty",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Invalid login attempt - username field empty",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1121939496
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I am a user on the Sauce Demo login page",
+            "match": {
+              "location": "src/steps/loginSteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1151412693
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I leave the username field empty and enter valid password \"secret_sauce\"",
+            "match": {
+              "location": "src/steps/loginSteps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 530790582
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "an error message \"Epic sadface: Username is required\" should be displayed",
+            "match": {
+              "location": "src/steps/loginSteps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20580685
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 118382677
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@invalid_login",
+            "line": 10
           }
         ],
         "type": "scenario"
@@ -227,7 +227,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 3817389841
+              "duration": 1098207164
             }
           },
           {
@@ -240,7 +240,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1379391025
+              "duration": 1146289086
             }
           },
           {
@@ -253,7 +253,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 607751328
+              "duration": 539524062
             }
           },
           {
@@ -266,7 +266,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 73157949
+              "duration": 40660022
             }
           },
           {
@@ -274,7 +274,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 824233662
+              "duration": 145371947
             }
           }
         ],
@@ -309,7 +309,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2665246208
+              "duration": 665459914
             }
           },
           {
@@ -322,7 +322,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1035356394
+              "duration": 1160467223
             }
           },
           {
@@ -335,7 +335,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 534086252
+              "duration": 363719874
             }
           },
           {
@@ -348,7 +348,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19519231
+              "duration": 75318228
             }
           },
           {
@@ -361,7 +361,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 79343990
+              "duration": 116723727
             }
           },
           {
@@ -374,7 +374,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 19420260
+              "duration": 46608974
             }
           },
           {
@@ -387,7 +387,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 59481197
+              "duration": 73346641
             }
           },
           {
@@ -395,7 +395,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 427823719
+              "duration": 205538176
             }
           }
         ],
@@ -419,7 +419,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2682592472
+              "duration": 527713077
             }
           },
           {
@@ -432,7 +432,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1100060453
+              "duration": 1250106234
             }
           },
           {
@@ -445,7 +445,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 659904982
+              "duration": 384160447
             }
           },
           {
@@ -458,7 +458,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 127497831
+              "duration": 126657461
             }
           },
           {
@@ -471,7 +471,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 608672181
+              "duration": 106249707
             }
           },
           {
@@ -484,7 +484,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12895222
+              "duration": 9232842
             }
           },
           {
@@ -497,7 +497,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 41389177
+              "duration": 44539114
             }
           },
           {
@@ -510,7 +510,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5621985
+              "duration": 3573226
             }
           },
           {
@@ -518,7 +518,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 361266029
+              "duration": 201611413
             }
           }
         ],
@@ -542,7 +542,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2556738375
+              "duration": 631960885
             }
           },
           {
@@ -555,7 +555,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1015058742
+              "duration": 1138086749
             }
           },
           {
@@ -568,7 +568,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 491918759
+              "duration": 368259446
             }
           },
           {
@@ -581,7 +581,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 22353990
+              "duration": 178026182
             }
           },
           {
@@ -594,7 +594,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 106853887
+              "duration": 113555538
             }
           },
           {
@@ -607,7 +607,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 310462226
+              "duration": 66990283
             }
           },
           {
@@ -620,7 +620,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 220006062
+              "duration": 48402463
             }
           },
           {
@@ -633,7 +633,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 228841930
+              "duration": 87761381
             }
           },
           {
@@ -646,7 +646,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 193287394
+              "duration": 47132391
             }
           },
           {
@@ -659,7 +659,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15211709
+              "duration": 5587457
             }
           },
           {
@@ -667,7 +667,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 364791675
+              "duration": 66150961
             }
           }
         ],
