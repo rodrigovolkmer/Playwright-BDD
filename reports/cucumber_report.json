@@ -1,0 +1,694 @@
+[
+  {
+    "description": "  As a SaudeDemo User, I should be able to login with valid credentials",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-page;invalid-login-attempt---username-field-empty",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Invalid login attempt - username field empty",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3842088591
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I am a user on the Sauce Demo login page",
+            "match": {
+              "location": "src/steps/loginSteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1419425776
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I leave the username field empty and enter valid password \"secret_sauce\"",
+            "match": {
+              "location": "src/steps/loginSteps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 641743882
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "an error message \"Epic sadface: Username is required\" should be displayed",
+            "match": {
+              "location": "src/steps/loginSteps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40148947
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 787157417
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@invalid_login",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-page;should-be-able-to-login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Should be able to login with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3835621443
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am a user on the Sauce Demo login page",
+            "match": {
+              "location": "src/steps/loginSteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1520093075
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I log in with valid credentials \"standard_user\", \"secret_sauce\"",
+            "match": {
+              "location": "src/steps/loginSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 805243542
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the browser navigates to the Inventory page",
+            "match": {
+              "location": "src/steps/inventorySteps copy.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32474892
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 540934911
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@valid_login",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-page;invalid-login-attempt---password-field-empty",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Invalid login attempt - password field empty",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3875451461
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "I am a user on the Sauce Demo login page",
+            "match": {
+              "location": "src/steps/loginSteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1335619800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I enter valid username \"standard_user\" and leave the password field empty",
+            "match": {
+              "location": "src/steps/loginSteps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 607960343
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "an error message \"Epic sadface: Password is required\" should be displayed",
+            "match": {
+              "location": "src/steps/loginSteps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63778931
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 834105857
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@invalid_login",
+            "line": 16
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-page;invalid-login-credentials-attempt",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Invalid login credentials attempt",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3817389841
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "I am a user on the Sauce Demo login page",
+            "match": {
+              "location": "src/steps/loginSteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1379391025
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I log in with invalid credentials",
+            "match": {
+              "location": "src/steps/loginSteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 607751328
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "an error message \"Epic sadface: Username and password do not match any user in this service\" should be displayed",
+            "match": {
+              "location": "src/steps/loginSteps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73157949
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 824233662
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@invalid_login",
+            "line": 22
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login Page",
+    "tags": [],
+    "uri": "src/features/loginTest.feature"
+  },
+  {
+    "description": "  As a standard user\n  I want to log in, sort items, shop, and verify check out\n  So that I can purchase items",
+    "elements": [
+      {
+        "description": "",
+        "id": "sauce-demo-end-to-end-shopping;sort-items-by-price-and-name",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Sort items by Price and Name",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2665246208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am a user on the Sauce Demo login page",
+            "match": {
+              "location": "src/steps/loginSteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1035356394
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I log in with valid credentials \"standard_user\", \"secret_sauce\"",
+            "match": {
+              "location": "src/steps/loginSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 534086252
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I sort items by \"Price (low to high)\"",
+            "match": {
+              "location": "src/steps/inventorySteps copy.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19519231
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "the items should be sorted accordingly to \"Price (low to high)\"",
+            "match": {
+              "location": "src/steps/inventorySteps copy.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79343990
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I sort items by \"Name (Z to A)\"",
+            "match": {
+              "location": "src/steps/inventorySteps copy.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19420260
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the items should be sorted accordingly to \"Name (Z to A)\"",
+            "match": {
+              "location": "src/steps/inventorySteps copy.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59481197
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 427823719
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sort_items",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sauce-demo-end-to-end-shopping;add-and-remove-multiple-items-to-cart",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Add and remove multiple items to cart",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2682592472
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "I am a user on the Sauce Demo login page",
+            "match": {
+              "location": "src/steps/loginSteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1100060453
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I log in with valid credentials \"standard_user\", \"secret_sauce\"",
+            "match": {
+              "location": "src/steps/loginSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 659904982
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I add the \"Sauce Labs Backpack\" and \"Sauce Labs Bike Light\" to the cart",
+            "match": {
+              "location": "src/steps/inventorySteps copy.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 127497831
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I navigate to the cart page",
+            "match": {
+              "location": "src/steps/inventorySteps copy.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 608672181
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "the cart should contain 2 items",
+            "match": {
+              "location": "src/steps/cartSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12895222
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I remove the \"Sauce Labs Bike Light\" from the cart",
+            "match": {
+              "location": "src/steps/cartSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41389177
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "the cart should contain 1 item",
+            "match": {
+              "location": "src/steps/cartSteps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5621985
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 361266029
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@add_and_remove_to_cart",
+            "line": 15
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sauce-demo-end-to-end-shopping;complete-end-to-end-purchase-with-multiple-items",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Complete end-to-end purchase with multiple items",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2556738375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 28,
+            "name": "I am a user on the Sauce Demo login page",
+            "match": {
+              "location": "src/steps/loginSteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1015058742
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "I log in with valid credentials \"standard_user\", \"secret_sauce\"",
+            "match": {
+              "location": "src/steps/loginSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 491918759
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "I sort items by \"Price (low to high)\"",
+            "match": {
+              "location": "src/steps/inventorySteps copy.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22353990
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "I add the \"Sauce Labs Backpack\" and \"Sauce Labs Bike Light\" to the cart",
+            "match": {
+              "location": "src/steps/inventorySteps copy.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 106853887
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "I navigate to the cart page",
+            "match": {
+              "location": "src/steps/inventorySteps copy.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 310462226
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "src/steps/checkoutSteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 220006062
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "I enter shipping details \"John\", \"Doe\", \"12345\"",
+            "match": {
+              "location": "src/steps/checkoutSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 228841930
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "I complete the purchase",
+            "match": {
+              "location": "src/steps/checkoutSteps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 193287394
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "the order confirmation should be displayed",
+            "match": {
+              "location": "src/steps/checkoutSteps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15211709
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 364791675
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@e2e_purchase",
+            "line": 25
+          },
+          {
+            "name": "@complete_purchase",
+            "line": 26
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "sauce-demo-end-to-end-shopping",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Sauce Demo End-to-End Shopping",
+    "tags": [],
+    "uri": "src/features/saucedemo.feature"
+  }
+]

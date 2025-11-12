@@ -1,0 +1,20 @@
+var reporter = require("cucumber-html-reporter");
+
+var options = {
+  theme: "bootstrap",
+  jsonFile: "reports/cucumber_report.json",
+  output: "reports/cucumber_report.html",
+  reportSuiteAsScenarios: true,
+  scenarioTimestamping: true,
+  launchReport: true,
+  metadata: {
+    "App Version": "1.0.0",
+    "Test Environment": "SAUCE DEMO",
+    Browser: "Chromium",
+    Platform: "Windows",
+    Parallel: "Scenarios",
+    Executed: "Local",
+  },
+};
+
+reporter.generate(options);
