@@ -32,11 +32,3 @@ When("I log in with invalid credentials", async function () {
 Then("an error message {string} should be displayed", async function (message: string) {
   await loginPage.checkErrorMessage(message);
 });
-
-Then("the error message display in red backdground color with white font color", async function (message: string) {
-  await loginPage.checkErrorMessage(message);
-});
-
-Then("the username and password fields are highlighted in red with a red", async function (message: string) {
-  await loginPage.checkErrorMessage(message);
-});
