@@ -22,11 +22,11 @@ Feature: Login Page
   @invalid_login
   Scenario: Invalid login credentials attempt
     Given I am a user on the Sauce Demo login page
-    When I log in with credentials "invalid_user", "wrong_password"
-    Then an error message "Epic sadface: Username and password do not match any user in this service" should be displayed
+    When I log in with credentials <username>, <password>
+    Then an error message <message> should be displayed
 
-  @locked_out_user
-  Scenario: Locked out user login attempt
-    Given I am a user on the Sauce Demo login page
-    When I log in with credentials "locked_out_user", "secret_sauce"
-    Then an error message "Epic sadface: Sorry, this user has been locked out." should be displayed   
+  Examples:
+    | username              | password          | message                                                                     |
+    |    "locked_out_user"  | "secret_sauce"    | "Epic sadface: Sorry, this user has been locked out."                       |
+    |    "invalid"          | "wrong_passwrd"   | "Epic sadface: Username and password do not match any user in this service" |
+  
