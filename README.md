@@ -31,15 +31,20 @@ npm ci
 npx playwright install
 ```
 
-## Running tests
+## Running tests and Generate Report
 
-You can run Cucumber directly (the repo uses ts-node to run TS step defs):
+The command below will generate the tests and the report right after, tests will run in parallel of 4:
 
 ```bash
-# run cucumber with the default profile in [cucumber.js]
-npx cucumber-js
-# or
+# run tests and generate report
 npm test
+```
+
+You can also just run the tests by running Cucumber directly (the repo uses ts-node to run TS step defs):
+
+```bash
+# run tests only
+npx cucumber-js
 ```
 
 To run a single feature or scenario:
@@ -50,6 +55,16 @@ npx cucumber-js [loginTest.feature]
 
 # run with tags (if you use tags)
 npx cucumber-js --tags "@valid_login"
+```
+
+## For Headed Mode
+
+The repo executes tests in headless mode, if headless mode is necessay, please change the settings below
+file: src/config/global-setup.ts
+
+```bash
+#line 9
+browser = await chromium.launch({ headless: false });
 ```
 
 ## Reports
@@ -75,14 +90,4 @@ module.exports = {
   --require src/steps/*.ts src/features/*.feature
   --parallel 4`,
 };
-```
-
-## For Headed Mode
-
-The repo executes tests in headless mode, if headless mode is necessay, please change the settings below
-file: src/config/global-setup.ts
-
-```bash
-#line 9
-browser = await chromium.launch({ headless: false });
 ```

@@ -4,7 +4,7 @@
   "description": "Automation Test Repo using Playwright and CucumberJS BDD",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js",
+    "test": "cucumber-js && node generate-report.js",
     "generate-report": "node generate-report.js"
   },
   "author": "Rodrigo Volkmer",
