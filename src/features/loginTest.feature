@@ -26,7 +26,7 @@ Feature: Login Page
     Then an error message <message> should be displayed
 
   Examples:
-    | username              | password          | message                                                                     |
-    |    "locked_out_user"  | "secret_sauce"    | "Epic sadface: Sorry, this user has been locked out."                       |
-    |    "invalid"          | "wrong_passwrd"   | "Epic sadface: Username and password do not match any user in this service" |
+    | username           | password          | message                                                                     |
+    | "locked_out_user"  | "secret_sauce"    | "Epic sadface: Sorry, this user has been locked out."                       |
+    | "invalid"          | "wrong_passwrd"   | "Epic sadface: Username and password do not match any user in this service" |
   
