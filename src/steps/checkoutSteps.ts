@@ -20,6 +20,7 @@ When(
 );
 
 When("I complete the purchase", async function () {
+  await checkoutPage.reviewOrder();
   await checkoutPage.finishOrder();
 });
 
