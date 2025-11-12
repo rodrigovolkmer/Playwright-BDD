@@ -2,10 +2,8 @@ import { When, Then } from "@cucumber/cucumber";
 import { page } from "../config/global-setup";
 import { InventoryPage } from "../pages/InventoryPage";
 import { CartPage } from "../pages/CartPage";
-import { CheckoutPage } from "../pages/CheckoutPage";
 
 let inventoryPage: InventoryPage;
-let checkoutPage: CheckoutPage;
 let cartPage: CartPage;
 
 Then("the browser navigates to the Inventory page", async function () {
@@ -29,7 +27,6 @@ When("I add the {string} and {string} to the cart", async function (item1: strin
 });
 
 When("I navigate to the cart page", async function () {
-  inventoryPage = new InventoryPage(page);
   await inventoryPage.navigateToCart();
   cartPage = new CartPage(page);
   await cartPage.verifyInCart();

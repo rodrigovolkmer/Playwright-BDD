@@ -1,10 +1,8 @@
 import { Given, When, Then } from "@cucumber/cucumber";
 import { page } from "../config/global-setup";
 import { LoginPage } from "../pages/LoginPage";
-import { InventoryPage } from "../pages/InventoryPage";
 
 let loginPage: LoginPage;
-let inventoryPage: InventoryPage;
 
 Given("I am a user on the Sauce Demo login page", async function () {
   loginPage = new LoginPage(page);
@@ -13,7 +11,6 @@ Given("I am a user on the Sauce Demo login page", async function () {
 
 When("I log in with credentials {string}, {string}", async function (username: string, password: string) {
   await loginPage.login(username, password);
-  inventoryPage = new InventoryPage(page);
 });
 
 When("I leave the username field empty and enter valid password {string}", async function (password: string) {

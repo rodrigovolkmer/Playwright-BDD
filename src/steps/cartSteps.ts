@@ -10,6 +10,5 @@ Then("the cart should contain {int} item(s)", async function (expectedCount: num
 });
 
 When("I remove the {string} from the cart", async function (itemName: string) {
-  cartPage = new CartPage(page);
   await cartPage.removeItemFromCart(itemName);
 });
